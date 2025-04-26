@@ -36,7 +36,7 @@ structure: |
   
   mvn clean install
 
--
+---
   Client
   
   cd client
@@ -52,7 +52,7 @@ run:
   
   mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.stomp.StompServer"
 
--
+---
   Run Client
   
   cd client/bin
