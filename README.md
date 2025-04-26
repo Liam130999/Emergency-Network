@@ -30,14 +30,14 @@ structure: |
   
   build: 
   
-  Server
+  Server:
   
   cd server
   
   mvn clean install
 
----
-  Client
+
+  Client:
   
   cd client
   
@@ -46,14 +46,14 @@ structure: |
 ---
 run: 
 
-  Server
+  Server:
   
   cd server 
   
   mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.stomp.StompServer"
 
----
-  Run Client
+
+  Client:
   
   cd client/bin
   
