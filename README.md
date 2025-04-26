@@ -37,7 +37,9 @@ structure: |
 
   # Client
   cd client
+  
   make
+
 
 run: 
   # Run Server
