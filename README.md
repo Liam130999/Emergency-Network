@@ -28,23 +28,27 @@ structure: |
   │   └── data/
   └── README.md
 
-build: |
+build: 
   # Server
   cd server
+  
   mvn clean install
 
   # Client
   cd client
   make
 
-run: |
+run: 
   # Run Server
-  cd server
+  cd server 
+  
   mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.stomp.StompServer"
 
   # Run Client
   cd client/bin
+  
   ./StompClient <host> <port>
+
 
 notes:
   - Server uses asynchronous Reactor pattern.
