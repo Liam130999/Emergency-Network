@@ -27,27 +27,26 @@ structure: |
   │   ├── bin/
   │   └── data/
   └── README.md
-
-
-# build: 
-  # Server
+  
+  build: 
+  Server
   cd server
   
   mvn clean install
 
-  # Client
+  Client
   cd client
   
   make
 
 
 run: 
-  # Run Server
+  Run Server
   cd server 
   
   mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.stomp.StompServer"
 
-  # Run Client
+  Run Client
   cd client/bin
   
   ./StompClient <host> <port>
