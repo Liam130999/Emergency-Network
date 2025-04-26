@@ -28,7 +28,8 @@ structure: |
   │   └── data/
   └── README.md
 
-build: 
+
+# build: 
   # Server
   cd server
   
